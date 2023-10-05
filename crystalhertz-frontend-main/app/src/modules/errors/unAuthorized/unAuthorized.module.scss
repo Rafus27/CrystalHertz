@@ -1,0 +1,26 @@
+.container {
+    width: 100vmax;
+    height: 100vmin;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: black;
+
+    .title {
+        text-align: center;
+        color: white;
+    }
+
+    .description {
+        color: white;
+    }
+
+    .contacts {
+        color: white;
+        position: absolute;
+        bottom: 30px;
+    }
+}

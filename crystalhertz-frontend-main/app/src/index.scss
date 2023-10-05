@@ -1,0 +1,42 @@
+@import "./components/bar/styles/bar.scss";
+@import "./pages/settings/styles/settings.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Roboto", sans-serif;
+
+  background-color: black;
+  color: white;
+
+  user-select: none;
+  -webkit-user-drag: none;
+  
+  overflow: hidden;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.app {
+  position: relative;
+}
+
+input {
+  outline: none;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+}

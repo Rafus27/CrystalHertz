@@ -1,0 +1,22 @@
+.settings {
+  &-container {
+    &_btns {
+      max-width: 300px;
+      max-height: 240px;
+
+      margin: 25px auto;
+    }
+
+    &_additional {
+      color: white;
+
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      position: absolute;
+
+      margin: 45px auto auto 375px;
+    }
+  }
+}
