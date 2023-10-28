@@ -1,14 +1,12 @@
 import styled from "styled-components";
-
-export const ContainerList = styled.div`
+export const ContainerList = styled.div `
   margin: 50px 0 0 0;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
-
-export const LeftBarList = styled.ul`
+export const LeftBarList = styled.ul `
   margin: 2.5px auto;
 
   width: 100%;
@@ -20,8 +18,7 @@ export const LeftBarList = styled.ul`
   align-items: center;
   justify-content: center;
 `;
-
-export const LeftBarListItem = styled.li<{ isActive: boolean; isOpen: boolean }>`
+export const LeftBarListItem = styled.li `
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -41,16 +38,14 @@ export const LeftBarListItem = styled.li<{ isActive: boolean; isOpen: boolean }>
     background: ${props => props.isActive === true ? "#ED6B0E" : "rgba(255, 255, 255, 0.1)"};
   }
 `;
-
-export const LeftBarListItemIcon = styled.i`
+export const LeftBarListItemIcon = styled.i `
   display: flex;
   align-items: center;
   justify-content: center;
 
   pointer-events: none;
 `;
-
-export const LeftBarListItemLabel = styled.span<{ isOpen: boolean }>`
+export const LeftBarListItemLabel = styled.span `
   font-size: 18px;
 
   margin-left: 8px;
@@ -58,8 +53,7 @@ export const LeftBarListItemLabel = styled.span<{ isOpen: boolean }>`
   opacity: 0;
   pointer-events: none;
 
-  ${(props) =>
-    props.isOpen &&
+  ${(props) => props.isOpen &&
     `
     opacity: 1;
     pointer-events: visible;

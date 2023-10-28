@@ -1,6 +1,5 @@
 import styled from "styled-components";
-
-export const LeftBarFrame = styled.section<{ isOpen: boolean }>`
+export const LeftBarFrame = styled.section `
   position: absolute;
 
   width: ${(props) => (props.isOpen === true ? "360px" : "120px")};
@@ -13,8 +12,7 @@ export const LeftBarFrame = styled.section<{ isOpen: boolean }>`
 
   z-index: 1000;
 `;
-
-export const LeftBarContainer = styled.div`
+export const LeftBarContainer = styled.div `
   max-height: 100%;
 
   position: relative;
@@ -26,15 +24,13 @@ export const LeftBarContainer = styled.div`
 
   position: relative;
 `;
-
-export const LeftBarImage = styled.img`
+export const LeftBarImage = styled.img `
   width: 80px;
   height: 70px;
 
   margin: 0 auto;
 `;
-
-export const LeftBarTitle = styled.span<{ isOpen: boolean }>`
+export const LeftBarTitle = styled.span `
   font-size: 36px;
   font-variant: small-caps;
 
@@ -47,15 +43,13 @@ export const LeftBarTitle = styled.span<{ isOpen: boolean }>`
 
   transition: 0.4s;
 
-  ${(props) =>
-    props.isOpen &&
+  ${(props) => props.isOpen &&
     `
     scale: 1;
     opacity: 1;
   `}
 `;
-
-export const LeftBarToggleSwitch = styled.div`
+export const LeftBarToggleSwitch = styled.div `
   position: absolute;
 
   top: 210px;
@@ -81,14 +75,11 @@ export const LeftBarToggleSwitch = styled.div`
     cursor: pointer;
   }
 `;
-
-export const LeftBarLogoImg = styled.img<{ isOpen: boolean }>`
-  margin: ${(props) =>
-    props.isOpen === true ? "0 150px 0 150px" : "0 150px 0 25px"};
+export const LeftBarLogoImg = styled.img `
+  margin: ${(props) => props.isOpen === true ? "0 150px 0 150px" : "0 150px 0 25px"};
   transition: 0.45s;
 `;
-
-export const LeftBarLogoText = styled.h3<{ isOpen: boolean }>`
+export const LeftBarLogoText = styled.h3 `
   color: white;
 
   font-size: 36px;
@@ -101,8 +92,7 @@ export const LeftBarLogoText = styled.h3<{ isOpen: boolean }>`
   scale: 0;
   opacity: 0;
 
-  ${(props) =>
-    props.isOpen &&
+  ${(props) => props.isOpen &&
     `
         scale: 1;
         opacity: 1;

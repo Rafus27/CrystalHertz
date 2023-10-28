@@ -1,20 +1,13 @@
-// lib
-import { FC } from "react";
-
 import styled from "styled-components";
-
-export const ApplicationIsDev: FC = () => {
-  return (
-    <ApplicationOnDevMode>
+export const ApplicationIsDev = () => {
+    return (<ApplicationOnDevMode>
       <ApplicationOnDevModeText>
         На данный момент на сайте ведутся технические работы! <br />
         Приносим извинения что вам приходится ждать.
       </ApplicationOnDevModeText>
-    </ApplicationOnDevMode>
-  );
+    </ApplicationOnDevMode>);
 };
-
-const ApplicationOnDevMode = styled.div`
+const ApplicationOnDevMode = styled.div `
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +22,6 @@ const ApplicationOnDevMode = styled.div`
   background-color: black;
   color: white;
 `;
-
-const ApplicationOnDevModeText = styled.p`
+const ApplicationOnDevModeText = styled.p `
   font-size: 20px;
 `;

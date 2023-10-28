@@ -1,8 +1,5 @@
 import styled from "styled-components";
-
-export const RenderingPagesChildren = styled.div<{
-  isOpen: boolean;
-}>`
+export const RenderingPagesChildren = styled.div `
   margin: ${(props) => (props.isOpen === true ? "0px 360px" : "0px 120px")};
 
   position: relative;
@@ -14,8 +11,7 @@ export const RenderingPagesChildren = styled.div<{
 
   transition: 0.4s ease-in-out;
 
-  ${(props) =>
-    props.isOpen &&
+  ${(props) => props.isOpen &&
     `
       transition: .4s ease-in-out;
   `}

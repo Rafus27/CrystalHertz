@@ -5,7 +5,7 @@ import { FC } from "react";
 import { AccountFrame } from "./styles/account.style.ts";
 
 // pages
-import { ListenerAccountPage } from "./pages/listener/ListenerAccount.page.tsx";
+import { ListenerAccountPage } from "./pages/listener/ListenerAccount.page.jsx";
 
 /**
  * Component as user account

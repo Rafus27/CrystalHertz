@@ -24,7 +24,7 @@ import {
 } from "@ant-design/icons";
 
 // other
-import { dataDefaultSortingValue } from "constants.tsx";
+import { dataDefaultSortingValue } from "constants.jsx";
 
 // state
 import {

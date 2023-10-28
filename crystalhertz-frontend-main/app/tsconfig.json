@@ -14,7 +14,7 @@
       "@store/*": ["src/store/*"],
       "@api/*": ["src/api/*"],
       "@assets/*": ["src/assets/*"],
-      "@consts": ["src/constants.tsx"],
+      "@consts": ["src/constants.jsx"],
     },
 
     /* Bundler mode */
